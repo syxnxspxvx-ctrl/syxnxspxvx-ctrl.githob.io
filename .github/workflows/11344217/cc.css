@@ -1,0 +1,238 @@
+body {
+    background-color: #f2f2f2; 
+    font-family: "微軟正黑體", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+
+
+ header {
+   background-color: blueviolet;
+   color: white;
+   margin: 0 0 0 0;
+   padding: 20px;
+   text-align: center;
+ }
+
+
+ nav {
+   background-color: plum;
+   margin: 0 0 0.5cm 0;
+   padding: 14px 16px;
+   text-align: center;
+   letter-spacing: 15px;
+   font-size: 15px;
+ }
+ .box1{
+   margin: 10px ;
+   background-color: white;
+   border: 2px solid #000;
+   padding: 19px;
+   box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+   border-radius: 10px;
+   overflow: hidden;
+   float: left;
+   width: 47%;
+   box-sizing: border-box;
+ }
+
+ .box2 {
+   margin: 10px ;
+   background-color: white;
+   border: 2px solid #000;
+   padding: 20px;
+   box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+   border-radius: 10px;
+   overflow: hidden;
+   float: right;
+   width: 50%;
+   box-sizing: border-box;
+ }
+
+ .image1 {
+   margin: 0 0 0 0;
+   margin-right: 10px;
+   float: left;
+   width: 25%;
+   box-sizing: border-box;
+ }
+
+ .myself {
+   margin: 0 0 0 0;
+   float: right;
+   width: 70%;
+   font-size: 20px;
+   box-sizing: border-box;
+   margin: 0;
+ }
+ .frame {
+   position: relative;  
+   margin: 10px 50px;
+   width: 60%;         
+   height: 30px;
+   background-color: blue;
+   border: 3px solid black;
+   box-sizing: border-box;
+   display: block;
+ }
+ .frame::before {
+   position: absolute;
+   left: -60px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-weight: bold;
+   color: #000;
+ }
+ .html-frame::before { content: "HTML:"; }
+ .java-frame::before { content: "Java:"; }
+ .python-frame::before { content: "Python:"; }
+ .c-frame::before { content: "C++:"; }
+
+ .frame div {
+   height: 100%;
+   text-align: right;
+   padding-right: 5px;
+   line-height: 20px;
+   font-weight: bold;
+   color: #000;
+   background-color: white;
+   border-right: 2px solid black;
+ }
+
+ .html {
+   width: 0;
+   animation: bar1 1s linear forwards;
+ }
+ @keyframes bar1 {
+   from { width: 0; }
+   to { width: 80%; }  
+ }
+ .java {
+   width: 0;
+   animation: bar2 1s linear forwards;
+ }
+ @keyframes bar2 {
+   from { width: 0; }
+   to { width: 70%; }  
+ }
+ .python {
+   width: 0;
+   animation: bar3 1s linear forwards;
+ }
+ @keyframes bar3 {
+   from { width: 0; }
+   to { width: 90%; }  
+ }
+ .c {
+    width: 0;
+    animation: bar4 1s linear forwards;
+  }
+  @keyframes bar4 {
+    from { width: 0; }
+    to { width: 30%; }  
+  }
+ .subject{
+   float: right;
+   box-sizing: border-box;
+ }
+ .circle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.circle-frame {
+  position: relative;
+  width: 110px;
+  height: 110px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 10;
+}
+
+.circle-progress {
+  fill: none;
+  stroke: #6a5acd;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 283; /* 2πr, r=45 */
+  stroke-dashoffset: calc(283 - (var(--percent) * 2.83));
+  transition: stroke-dashoffset 1s ease;
+}
+
+.circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.circle-text h3 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.circle-text p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+  .jp0 {
+    margin: 20px 5px 0px 20px; 
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    float: left;
+    width: 97%;
+    text-align: center;
+    clear: both;   
+    box-sizing: border-box;
+  }
+  .jp1 ,.jp2 {
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    float: left;      
+    width: 48%;        
+    margin: 10px 1%;  
+    box-sizing: border-box;
+  }
+
+   .jp3{
+    margin: 20px 0px 10px 80px;
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .nav2{ 
+    background-color: plum;
+    margin: 0 0 0cm 0;
+    padding: 14px 16px;
+    text-align: center;
+    letter-spacing: 20px;
+    font-size: 15px;
+  }
+  footer {
+    background-color: blueviolet;
+    color: white;
+    margin: 0 0 0 0;
+    padding: 20px;
+    text-align: center;
+  }
